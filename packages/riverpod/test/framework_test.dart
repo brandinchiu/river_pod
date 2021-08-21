@@ -640,7 +640,9 @@ void main() {
       sub.flush();
       verifyNoMoreInteractions(listener);
 
-      counter..increment()..increment();
+      counter
+        ..increment()
+        ..increment();
 
       verifyNoMoreInteractions(listener);
 
